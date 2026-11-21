@@ -51,7 +51,7 @@
   <li>ta progression (révisions, séances, série de jours, niveau) ;</li>
   <li>ton prénom si tu le donnes, tes matières, tes réponses aux questions d'accueil, ta langue et tes réglages.</li>
 </ul>
-<p>Si tu désinstalles l'application, ces données sont supprimées avec elle. Elles ne sont pas sauvegardées par Kartone ailleurs que sur ton téléphone.</p>
+<p>Si tu désinstalles l'application, iOS supprime ces données avec elle. Kartone ne les sauvegarde pas ailleurs que sur ton téléphone. Une sauvegarde de ton téléphone (iCloud ou ordinateur), gérée par Apple et par toi, peut en contenir une copie.</p>
 
 <h2>3. Ce qui part vers un serveur, et pourquoi</h2>
 
@@ -59,7 +59,7 @@
 <p>À la première ouverture, l'application crée un <strong>identifiant technique anonyme</strong>, propre à ton installation. Il sert à reconnaître ton téléphone auprès du serveur, à séparer tes données de celles des autres, et à limiter le nombre de demandes. Il ne contient ni ton nom ni ton adresse.</p>
 <p>Passent par ce serveur :</p>
 <ul>
-  <li><strong>tes enregistrements audio</strong>, le temps de leur transcription. Ils sont effacés de notre serveur dès que le texte revient ;</li>
+  <li><strong>tes enregistrements audio</strong>, le temps de leur transcription. L'application est conçue pour les effacer de notre serveur dès que le texte revient ;</li>
   <li><strong>les PDF et le texte lu sur tes photos</strong>, le temps de fabriquer le cours. Les photos elles mêmes restent sur ton téléphone : leur texte y est lu, et seul ce texte part ;</li>
   <li><strong>le texte produit</strong> (transcription, cours, fiche, flashcards, QCM, plan), que ton téléphone vient y chercher, et qui y reste ensuite pour la durée dite à la section 5 ;</li>
   <li><strong>tes questions au chat</strong> et les textes à traduire ou à lire à voix haute, le temps d'y répondre : ils ne sont pas enregistrés sur notre serveur ;</li>
@@ -83,7 +83,7 @@
 <p>Les abonnements sont vendus par <strong>Apple</strong>, sur l'App Store. Kartone ne voit jamais tes moyens de paiement. <strong>RevenueCat</strong> (États-Unis) vérifie auprès d'Apple si ton abonnement est actif. Il reçoit un identifiant anonyme, l'historique de tes achats dans l'application, et le type d'installation (App Store, TestFlight, développement).</p>
 
 <h3>La mesure d'usage</h3>
-<p><strong>PostHog</strong> (serveurs dans l'Union européenne) reçoit des statistiques d'usage, pour savoir quels écrans sont vus, où le parcours s'arrête et ce qui marche : ouverture de l'application, écrans de l'accueil, ouverture et fermeture de l'écran d'abonnement, achat commencé, réussi, abandonné ou raté, création d'un cours, demande d'une fiche, d'une série de flashcards ou d'un QCM, résultat d'une révision. Ces événements sont rattachés à un identifiant anonyme et au modèle de ton appareil. Ils ne contiennent <strong>jamais</strong> le texte de tes cours, de tes cartes, de tes questions ni rien de ce que tu écris. L'adresse IP est anonymisée : PostHog en déduit un pays approximatif, puis ne la garde pas. Il n'y a ni enregistrement de l'écran, ni publicité, ni partage avec des annonceurs.</p>
+<p><strong>PostHog</strong> (serveurs dans l'Union européenne) reçoit des statistiques d'usage, pour savoir quels écrans sont vus, où le parcours s'arrête et ce qui marche : ouverture de l'application, écrans de l'accueil, ouverture et fermeture de l'écran d'abonnement, achat commencé, réussi, abandonné ou raté, création d'un cours, demande d'une fiche, d'une série de flashcards ou d'un QCM, résultat d'une révision. Ces événements sont rattachés à un identifiant anonyme et au modèle de ton appareil. L'application n'y met pas le texte de tes cours, de tes cartes, de tes questions ni de ce que tu écris. PostHog est réglé pour ne pas conserver l'adresse IP, dont il déduit un pays approximatif. Il n'y a ni enregistrement de l'écran, ni publicité, ni partage avec des annonceurs.</p>
 
 <h2>4. Les services tiers, en un tableau</h2>
 <div class="tableau">
@@ -98,21 +98,27 @@
   <tr><td>PostHog</td><td>Statistiques d'usage anonymes</td><td>UE</td></tr>
 </table>
 </div>
-<p>Chacun de ces services traite les données qu'il reçoit selon sa propre politique de confidentialité. Les transferts hors de l'Union européenne s'appuient sur les garanties prévues par le RGPD.</p>
+<p>Chacun de ces services traite les données qu'il reçoit selon ses propres conditions et sa propre politique de confidentialité, que Kartone ne maîtrise pas. Pour savoir ce qu'il en fait et combien de temps il les garde, c'est sa politique qui fait foi.</p>
 
 <h2>5. Combien de temps</h2>
+<p>Les durées ci dessous décrivent le fonctionnement prévu de l'application. Elles reposent sur des outils techniques et des services extérieurs, et peuvent varier en cas de panne ou de changement chez ces services.</p>
 <ul>
   <li><strong>Sur ton téléphone</strong> : tant que l'application est installée, ou jusqu'à ce que tu supprimes une note.</li>
-  <li><strong>Enregistrements audio sur notre serveur</strong> : effacés dès que leur transcription revient, et au plus tard vingt quatre heures après leur dépôt si elle n'aboutit pas.</li>
-  <li><strong>Chez Soniox</strong> : Kartone demande l'effacement de l'audio et de sa transcription dès que le travail est fini. Si cette demande échoue, Kartone la renouvelle ; sans effacement, Soniox les supprime de lui même au bout de trente jours.</li>
-  <li><strong>PDF</strong> : ils ne sont pas conservés sur notre serveur au delà de la fabrication du cours.</li>
-  <li><strong>Textes produits et identifiant anonyme sur notre serveur</strong> : gardés tant que tu utilises l'application, puis effacés, avec tout ce qui s'y rattache, trente jours après sa dernière utilisation.</li>
-  <li><strong>Réglages des notifications</strong> : gardés avec l'identifiant anonyme, et effacés avec lui. Sans ton autorisation de notifier, aucun jeton n'est enregistré.</li>
-  <li><strong>RevenueCat, Apple, PostHog</strong> : selon la durée prévue par chacun de ces services.</li>
+  <li><strong>Enregistrements audio sur notre serveur</strong> : prévus pour être effacés dès que leur transcription revient, ou par le nettoyage du serveur si elle n'aboutit pas.</li>
+  <li><strong>Chez Soniox</strong> : Kartone demande l'effacement de l'audio et de sa transcription dès que le travail est fini, et renouvelle la demande si elle échoue. Selon Soniox, ce qui n'a pas été effacé est supprimé au bout de trente jours.</li>
+  <li><strong>PDF</strong> : l'application n'est pas conçue pour les conserver sur notre serveur au delà de la fabrication du cours.</li>
+  <li><strong>Textes produits et identifiant anonyme sur notre serveur</strong> : gardés tant que tu utilises l'application. Le nettoyage du serveur est prévu pour les effacer, avec tout ce qui s'y rattache, après trente jours sans utilisation.</li>
+  <li><strong>Réglages des notifications</strong> : gardés avec l'identifiant anonyme, et effacés avec lui. Sans ton autorisation de notifier, l'application n'enregistre pas de jeton.</li>
+  <li><strong>Apple, OpenRouter, Google, OpenAI, RevenueCat, Expo, PostHog</strong> : selon la durée prévue par chacun de ces services.</li>
 </ul>
 
-<h2>6. Changements</h2>
-<p>Si Kartone change ce qu'elle collecte ou à qui elle l'envoie, cette page est mise à jour, avec sa date en tête.</p>
+<h2>6. Tes choix et tes droits</h2>
+<p>C'est toi qui décides de ce qui part. L'application te demande ton accord avant d'envoyer le contenu de tes notes aux services d'intelligence artificielle, et tu peux le retirer à tout moment dans ses réglages. Les autorisations du micro, de l'appareil photo, des photos et des notifications se donnent et se retirent dans les réglages d'iOS.</p>
+<p>Le RGPD te donne le droit d'accéder à tes données, de les faire effacer et de t'opposer à leur traitement. Kartone ne te demande aucun compte, ni nom, ni adresse : elle n'a donc aucun moyen de relier une demande à une installation, et ne peut pas retrouver les données de quelqu'un à partir d'un message. Ces droits s'exercent dans l'application : supprimer une note la retire de ton téléphone, retirer ton accord arrête les envois aux services d'intelligence artificielle, et désinstaller l'application efface ce qu'elle gardait sur ton téléphone. Pour les données reçues par les services de la section 4, adresse toi à chacun d'eux.</p>
+<p>Tu peux adresser une réclamation à la CNIL, sur <a href="https://www.cnil.fr">cnil.fr</a>.</p>
+
+<h2>7. Changements</h2>
+<p>Cette page peut être modifiée quand l'application change. La date en tête dit sa dernière version.</p>
 
 <footer>Kartone, éditée par Georges ATALLA. Contact : georges.atalla.pro@gmail.com</footer>
 </main>
