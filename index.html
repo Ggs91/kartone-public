@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kartone, politique de confidentialité</title>
+<style>
+  :root { --texte: #0F1530; --doux: #4a5070; --violet: #5B3FD6; --fond: #ffffff; --trait: #e6e4f0; --pastille: #f4f1ff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 80px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.25rem; margin: 40px 0 8px; padding-top: 16px; border-top: 1px solid var(--trait); }
+  h3 { font-size: 1.05rem; margin: 24px 0 4px; }
+  p, li { color: var(--texte); }
+  .date { color: var(--doux); margin: 0 0 24px; }
+  .resume { background: var(--pastille); border-radius: 14px; padding: 16px 20px; }
+  .resume ul { margin: 8px 0 0; padding-left: 20px; }
+  a { color: var(--violet); }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--trait); }
+  th { color: var(--doux); font-weight: 600; }
+  .tableau { overflow-x: auto; }
+  footer { margin-top: 48px; color: var(--doux); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>Politique de confidentialité de Kartone</h1>
+<p class="date">Dernière mise à jour : 21 novembre 2026</p>
+
+<div class="resume">
+  <strong>En bref</strong>
+  <ul>
+    <li>Kartone ne te demande <strong>aucun compte</strong>, ni nom, ni adresse e-mail, ni mot de passe.</li>
+    <li>Tes cours, tes notes, tes fiches, tes flashcards, tes QCM et tes réglages sont <strong>gardés sur ton téléphone</strong>.</li>
+    <li>Pour transcrire tes enregistrements et fabriquer tes cours, une partie de leur contenu passe par notre serveur, à Paris, et par des services d'intelligence artificielle, après ton accord.</li>
+    <li>Aucune publicité. Rien n'est vendu, loué ni cédé.</li>
+  </ul>
+</div>
+
+<h2>1. Qui est responsable</h2>
+<p>L'application Kartone est éditée par <strong>Georges ATALLA</strong>, responsable du traitement des données décrites ici.</p>
+<p>Contact : <a href="mailto:georges.atalla.pro@gmail.com">georges.atalla.pro@gmail.com</a></p>
+
+<h2>2. Ce qui reste sur ton téléphone</h2>
+<p>Les données suivantes sont enregistrées dans l'espace de l'application sur ton téléphone. Elles n'en sortent pas, sauf pour les traitements décrits à la section 3 :</p>
+<ul>
+  <li>tes enregistrements audio, les PDF, les photos et les fichiers audio ou vidéo que tu importes ;</li>
+  <li>les cours, résumés, fiches, flashcards, QCM, plans de révision et conversations avec Milo qui en sont tirés ;</li>
+  <li>ta progression (révisions, séances, série de jours, niveau) ;</li>
+  <li>ton prénom si tu le donnes, tes matières, tes réponses aux questions d'accueil, ta langue et tes réglages.</li>
+</ul>
+<p>Si tu désinstalles l'application, ces données sont supprimées avec elle. Elles ne sont pas sauvegardées par Kartone ailleurs que sur ton téléphone.</p>
+
+<h2>3. Ce qui part vers un serveur, et pourquoi</h2>
+
+<h3>Notre serveur (Supabase, Paris, Union européenne)</h3>
+<p>À la première ouverture, l'application crée un <strong>identifiant technique anonyme</strong>, propre à ton installation. Il sert à reconnaître ton téléphone auprès du serveur, à séparer tes données de celles des autres, et à limiter le nombre de demandes. Il ne contient ni ton nom ni ton adresse.</p>
+<p>Passent par ce serveur :</p>
+<ul>
+  <li><strong>tes enregistrements audio</strong>, le temps de leur transcription. Ils sont effacés de notre serveur dès que le texte revient ;</li>
+  <li><strong>les PDF et le texte lu sur tes photos</strong>, le temps de fabriquer le cours. Les photos elles mêmes restent sur ton téléphone : leur texte y est lu, et seul ce texte part ;</li>
+  <li><strong>le texte produit</strong> (transcription, cours, fiche, flashcards, QCM, plan), que ton téléphone vient y chercher, et qui y reste ensuite pour la durée dite à la section 5 ;</li>
+  <li><strong>tes questions au chat</strong> et les textes à traduire ou à lire à voix haute, le temps d'y répondre : ils ne sont pas enregistrés sur notre serveur ;</li>
+  <li>si tu actives les notifications : le jeton qui permet de les envoyer à ton téléphone, l'heure et les jours de ton rappel, ton fuseau horaire, la date de fin de ton essai gratuit, et le texte des deux notifications dans ta langue.</li>
+</ul>
+
+<h3>Les services d'intelligence artificielle</h3>
+<p>Kartone ne transcrit pas et ne rédige pas elle même. Avant tout envoi, l'application te demande ton accord, et tu peux le retirer à tout moment dans ses réglages.</p>
+<ul>
+  <li><strong>Soniox</strong> (États-Unis) reçoit tes enregistrements audio pour les transformer en texte, et le texte d'un résumé quand tu demandes à l'écouter. Kartone demande à Soniox d'effacer chaque enregistrement et sa transcription une fois le travail fini.</li>
+  <li><strong>OpenRouter</strong> (États-Unis) transmet à un modèle de <strong>Google</strong> (Gemini) ou d'<strong>OpenAI</strong> (GPT) le texte de tes transcriptions, tes PDF, le texte lu sur tes photos et tes questions au chat, pour en faire un cours, une fiche, des flashcards, un QCM, un plan de révision, une traduction ou une réponse.</li>
+</ul>
+
+<h3>La reconnaissance vocale d'Apple</h3>
+<p>Quand tu dictes du texte au micro (par exemple une question au chat), la reconnaissance vocale d'iOS transforme ta voix en texte. Ce traitement est fait par Apple, selon ses propres règles.</p>
+
+<h3>Les notifications</h3>
+<p>Les rappels et l'avis de fin d'essai envoyés par notre serveur passent par le service de notifications d'<strong>Expo</strong> (États-Unis), puis par celui d'Apple. Ils reçoivent le jeton de ton téléphone et le texte de la notification.</p>
+
+<h3>Les achats</h3>
+<p>Les abonnements sont vendus par <strong>Apple</strong>, sur l'App Store. Kartone ne voit jamais tes moyens de paiement. <strong>RevenueCat</strong> (États-Unis) vérifie auprès d'Apple si ton abonnement est actif. Il reçoit un identifiant anonyme, l'historique de tes achats dans l'application, et le type d'installation (App Store, TestFlight, développement).</p>
+
+<h3>La mesure d'usage</h3>
+<p><strong>PostHog</strong> (serveurs dans l'Union européenne) reçoit des statistiques d'usage, pour savoir quels écrans sont vus, où le parcours s'arrête et ce qui marche : ouverture de l'application, écrans de l'accueil, ouverture et fermeture de l'écran d'abonnement, achat commencé, réussi, abandonné ou raté, création d'un cours, demande d'une fiche, d'une série de flashcards ou d'un QCM, résultat d'une révision. Ces événements sont rattachés à un identifiant anonyme et au modèle de ton appareil. Ils ne contiennent <strong>jamais</strong> le texte de tes cours, de tes cartes, de tes questions ni rien de ce que tu écris. L'adresse IP est anonymisée : PostHog en déduit un pays approximatif, puis ne la garde pas. Il n'y a ni enregistrement de l'écran, ni publicité, ni partage avec des annonceurs.</p>
+
+<h2>4. Les services tiers, en un tableau</h2>
+<div class="tableau">
+<table>
+  <tr><th>Service</th><th>Pour quoi</th><th>Où</th></tr>
+  <tr><td>Supabase</td><td>Notre serveur : identifiant anonyme, travail en cours, notifications</td><td>Paris (UE)</td></tr>
+  <tr><td>Soniox</td><td>Transcription de l'audio, lecture à voix haute</td><td>États-Unis</td></tr>
+  <tr><td>OpenRouter, avec Google ou OpenAI</td><td>Rédaction des cours, fiches, cartes, QCM, plans, traductions et réponses du chat</td><td>États-Unis</td></tr>
+  <tr><td>Apple</td><td>Paiement des abonnements, reconnaissance vocale, notifications</td><td>Selon Apple</td></tr>
+  <tr><td>RevenueCat</td><td>Vérification de l'abonnement</td><td>États-Unis</td></tr>
+  <tr><td>Expo</td><td>Envoi des notifications du serveur</td><td>États-Unis</td></tr>
+  <tr><td>PostHog</td><td>Statistiques d'usage anonymes</td><td>UE</td></tr>
+</table>
+</div>
+<p>Chacun de ces services traite les données qu'il reçoit selon sa propre politique de confidentialité. Les transferts hors de l'Union européenne s'appuient sur les garanties prévues par le RGPD.</p>
+
+<h2>5. Combien de temps</h2>
+<ul>
+  <li><strong>Sur ton téléphone</strong> : tant que l'application est installée, ou jusqu'à ce que tu supprimes une note.</li>
+  <li><strong>Enregistrements audio sur notre serveur</strong> : effacés dès que leur transcription revient, et au plus tard vingt quatre heures après leur dépôt si elle n'aboutit pas.</li>
+  <li><strong>Chez Soniox</strong> : Kartone demande l'effacement de l'audio et de sa transcription dès que le travail est fini. Si cette demande échoue, Kartone la renouvelle ; sans effacement, Soniox les supprime de lui même au bout de trente jours.</li>
+  <li><strong>PDF</strong> : ils ne sont pas conservés sur notre serveur au delà de la fabrication du cours.</li>
+  <li><strong>Textes produits et identifiant anonyme sur notre serveur</strong> : gardés tant que tu utilises l'application, puis effacés, avec tout ce qui s'y rattache, trente jours après sa dernière utilisation.</li>
+  <li><strong>Réglages des notifications</strong> : gardés avec l'identifiant anonyme, et effacés avec lui. Sans ton autorisation de notifier, aucun jeton n'est enregistré.</li>
+  <li><strong>RevenueCat, Apple, PostHog</strong> : selon la durée prévue par chacun de ces services.</li>
+</ul>
+
+<h2>6. Tes droits</h2>
+<p>Tu peux demander l'accès à tes données, leur rectification ou leur effacement, t'opposer à un traitement ou en demander la limitation, en écrivant à <a href="mailto:georges.atalla.pro@gmail.com">georges.atalla.pro@gmail.com</a>. Comme Kartone ne connaît ni ton nom ni ton adresse, il faudra peut être quelques informations sur ton installation pour retrouver ce qui la concerne.</p>
+<p>Le plus simple reste à ta main : supprimer une note dans l'application la retire de ton téléphone, retirer ton accord dans les réglages arrête les envois aux services d'intelligence artificielle, et désinstaller l'application efface tout ce qu'elle gardait sur ton téléphone. Ce qui restait sur notre serveur est alors effacé trente jours après ta dernière utilisation.</p>
+<p>Tu peux aussi adresser une réclamation à la CNIL, sur <a href="https://www.cnil.fr">cnil.fr</a>.</p>
+
+<h2>7. Changements</h2>
+<p>Si Kartone change ce qu'elle collecte ou à qui elle l'envoie, cette page est mise à jour, avec sa date en tête.</p>
+
+<footer>Kartone, éditée par Georges ATALLA. Contact : georges.atalla.pro@gmail.com</footer>
+</main>
+</body>
+</html>
