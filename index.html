@@ -27,14 +27,14 @@
 <body>
 <main>
 <h1>Politique de confidentialité de Kartone</h1>
-<p class="date">Dernière mise à jour : 21 novembre 2026</p>
+<p class="date">Dernière mise à jour : 26 novembre 2026</p>
 
 <div class="resume">
   <strong>En bref</strong>
   <ul>
     <li>Kartone ne te demande <strong>aucun compte</strong>, ni nom, ni adresse e-mail, ni mot de passe.</li>
     <li>Tes cours, tes notes, tes fiches, tes flashcards, tes QCM et tes réglages sont <strong>gardés sur ton téléphone</strong>.</li>
-    <li>Pour transcrire tes enregistrements et fabriquer tes cours, une partie de leur contenu passe par notre serveur, à Paris, et par des services d'intelligence artificielle, après ton accord.</li>
+    <li>Pour transcrire tes enregistrements, fabriquer tes cours et parler avec Milo au téléphone, une partie de leur contenu (et ta voix pendant un appel) passe par notre serveur, à Paris, et par des services d'intelligence artificielle, après ton accord.</li>
     <li>Aucune publicité. Rien n'est vendu, loué ni cédé.</li>
   </ul>
 </div>
@@ -47,7 +47,7 @@
 <p>Les données suivantes sont enregistrées dans l'espace de l'application sur ton téléphone. Elles n'en sortent pas, sauf pour les traitements décrits à la section 3 :</p>
 <ul>
   <li>tes enregistrements audio, les PDF, les photos et les fichiers audio ou vidéo que tu importes ;</li>
-  <li>les cours, résumés, fiches, flashcards, QCM, plans de révision et conversations avec Milo qui en sont tirés ;</li>
+  <li>les cours, résumés, fiches, flashcards, QCM, plans de révision et conversations avec Milo qui en sont tirés, y compris le texte de tes appels avec Milo ;</li>
   <li>ta progression (révisions, séances, série de jours, niveau) ;</li>
   <li>ton prénom si tu le donnes, tes matières, tes réponses aux questions d'accueil, ta langue et tes réglages.</li>
 </ul>
@@ -63,6 +63,7 @@
   <li><strong>les PDF et le texte lu sur tes photos</strong>, le temps de fabriquer le cours. Les photos elles mêmes restent sur ton téléphone : leur texte y est lu, et seul ce texte part ;</li>
   <li><strong>le texte produit</strong> (transcription, cours, fiche, flashcards, QCM, plan), que ton téléphone vient y chercher, et qui y reste ensuite pour la durée dite à la section 5 ;</li>
   <li><strong>tes questions au chat</strong> et les textes à traduire ou à lire à voix haute, le temps d'y répondre : ils ne sont pas enregistrés sur notre serveur ;</li>
+  <li><strong>quand tu appelles Milo</strong> : le texte du cours, ce que l'application sait de ta révision sur ce cours et vos derniers échanges, le temps d'ouvrir l'appel. Ta voix, elle, ne passe pas par notre serveur. De l'appel, le serveur ne garde que sa durée et son coût, rien de ce qui s'y dit ;</li>
   <li>si tu actives les notifications : le jeton qui permet de les envoyer à ton téléphone, l'heure et les jours de ton rappel, ton fuseau horaire, la date de fin de ton essai gratuit, et le texte des deux notifications dans ta langue.</li>
 </ul>
 
@@ -71,6 +72,7 @@
 <ul>
   <li><strong>Soniox</strong> (serveurs dans l'Union européenne) reçoit tes enregistrements audio pour les transformer en texte, et le texte d'un résumé quand tu demandes à l'écouter. Kartone demande à Soniox d'effacer chaque enregistrement et sa transcription une fois le travail fini.</li>
   <li><strong>OpenRouter</strong> (États-Unis) transmet à un modèle de <strong>Google</strong> (Gemini) ou d'<strong>OpenAI</strong> (GPT) le texte de tes transcriptions, tes PDF, le texte lu sur tes photos et tes questions au chat, pour en faire un cours, une fiche, des flashcards, un QCM, un plan de révision, une traduction ou une réponse.</li>
+  <li><strong>OpenAI</strong> (États-Unis), pendant un appel avec Milo, reçoit ta voix, directement depuis ton téléphone, ainsi que le texte du cours, ce que l'application sait de ta révision sur ce cours et vos derniers échanges, pour te répondre à voix haute et écrire l'appel en texte.</li>
 </ul>
 
 <h3>La reconnaissance vocale d'Apple</h3>
@@ -92,6 +94,7 @@
   <tr><td>Supabase</td><td>Notre serveur : identifiant anonyme, travail en cours, notifications</td><td>Paris (UE)</td></tr>
   <tr><td>Soniox</td><td>Transcription de l'audio, lecture à voix haute</td><td>UE</td></tr>
   <tr><td>OpenRouter, avec Google ou OpenAI</td><td>Rédaction des cours, fiches, cartes, QCM, plans, traductions et réponses du chat</td><td>États-Unis</td></tr>
+  <tr><td>OpenAI</td><td>Appel vocal avec Milo</td><td>États-Unis</td></tr>
   <tr><td>Apple</td><td>Paiement des abonnements, reconnaissance vocale, notifications</td><td>Selon Apple</td></tr>
   <tr><td>RevenueCat</td><td>Vérification de l'abonnement</td><td>États-Unis</td></tr>
   <tr><td>Expo</td><td>Envoi des notifications du serveur</td><td>États-Unis</td></tr>
@@ -108,6 +111,7 @@
   <li><strong>Chez Soniox</strong> : Kartone demande l'effacement de l'audio et de sa transcription dès que le travail est fini, et renouvelle la demande si elle échoue. Selon Soniox, ce qui n'a pas été effacé est supprimé au bout de trente jours.</li>
   <li><strong>PDF</strong> : l'application n'est pas conçue pour les conserver sur notre serveur au delà de la fabrication du cours.</li>
   <li><strong>Textes produits et identifiant anonyme sur notre serveur</strong> : gardés tant que tu utilises l'application. Le nettoyage du serveur est prévu pour les effacer, avec tout ce qui s'y rattache, après trente jours sans utilisation.</li>
+  <li><strong>Appels avec Milo</strong> : sur notre serveur, seulement la durée et le coût de chaque appel, effacés avec l'identifiant anonyme. Le texte de l'appel reste sur ton téléphone. Selon OpenAI, le contenu d'un appel n'est pas utilisé pour entraîner ses modèles, et peut être gardé jusqu'à trente jours dans ses journaux de surveillance des abus.</li>
   <li><strong>Réglages des notifications</strong> : gardés avec l'identifiant anonyme, et effacés avec lui. Sans ton autorisation de notifier, l'application n'enregistre pas de jeton.</li>
   <li><strong>Apple, OpenRouter, Google, OpenAI, RevenueCat, Expo, PostHog</strong> : selon la durée prévue par chacun de ces services.</li>
 </ul>
